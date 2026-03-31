@@ -1,0 +1,110 @@
+#################################################
+# ========== ENVIRONMENT FILES =================
+#################################################
+
+# Environment variables (ALL environments)
+.env
+.env.*
+*.env
+
+#################################################
+# ========== PYTHON / FASTAPI ==================
+#################################################
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+backend/venv/
+backend/.venv/
+env/
+ENV/
+
+# UV / pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing / coverage
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+#################################################
+# ========== ALEMBIC ===========================
+#################################################
+
+# If you want to ignore migration cache only
+alembic/__pycache__/
+
+#################################################
+# ========== NODE / REACT ======================
+#################################################
+
+# Node dependencies
+frontend/react-app/node_modules/
+node_modules/
+
+# Build output
+frontend/reac-app/dist/
+frontend/reac-app/build/
+
+# Vite cache
+frontend/reac-app/.vite/
+frontend/reac-app/.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+#################################################
+# ========== DOCKER ============================
+#################################################
+
+# Docker overrides
+docker-compose.override.yml
+
+# Local docker volumes (if any)
+*.db
+*.sqlite3
+
+#################################################
+# ========== POSTGRES ==========================
+#################################################
+
+# If local DB files are stored
+*.dump
+*.sql
+
+#################################################
+# ========== NGINX =============================
+#################################################
+
+# If storing logs locally
+nginx/logs/
+logs/
+
+#################################################
+# ========== BUILD ARTIFACTS ===================
+#################################################
+
+*.log
+*.tmp
+*.bak
+*.old
