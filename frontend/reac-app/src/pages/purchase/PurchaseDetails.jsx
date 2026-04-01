@@ -23,15 +23,15 @@ const HomeContent = () => {
   if (loading) return <p className="p-4">Loading items...</p>;
 
   return (
-    <div className="p-4 bg-gray-100 flex-1 min-h-screen">
-      <h1 className="text-3xl font-bold mb-4 text-blue-600">Sales Dashboard</h1>
+    <div className="flex-1 min-h-screen bg-gray-100 p-4 sm:p-6 lg:p-8">
+      <h1 className="text-3xl font-bold mb-4 text-emerald-900">Purchase Dashboard</h1>
 
       {items.length === 0 ? (
         <p>No items found</p>
       ) : (
         <div className="overflow-x-auto bg-white rounded-lg shadow-md">
           <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-blue-600 text-white">
+            <thead className="bg-emerald-900 text-white">
               <tr>
                 <th className="px-6 py-3 text-left text-sm font-semibold">Purchase ID</th>
                 <th className="px-6 py-3 text-left text-sm font-semibold">Amount</th>

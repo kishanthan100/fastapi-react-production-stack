@@ -6,14 +6,14 @@ export default function Sidebar() {
   const menuItemClass = (path) =>
     `block px-4 py-2 rounded-md transition ${
       location.pathname === path
-        ? "bg-blue-600 text-white"
-        : "text-gray-300 hover:bg-gray-700 hover:text-white"
+        ? "bg-emerald-900 text-white"
+        : "text-black hover:bg-emerald-700 hover:text-white"
     }`;
 
   return (
-    <aside className="w-64 bg-gray-900 text-white flex flex-col p-4">
+    <aside className="w-64 bg-zinc-200 text-emerald-800 flex flex-col p-4">
       <h2 className="text-2xl font-bold mb-8 text-center">
-        Dashboard
+        Ekai
       </h2>
 
       <nav className="space-y-2">

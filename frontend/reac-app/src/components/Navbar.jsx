@@ -14,7 +14,7 @@ export default function Navbar({ toggleSidebar }) {
   };
 
   return (
-    <header className="bg-white shadow px-6 py-4 flex justify-between items-center">
+    <header className="bg-zinc-200 shadow px-6 py-4 flex justify-between items-center">
       
       {/* LEFT SECTION */}
       <div className="flex items-center gap-4">
@@ -22,21 +22,19 @@ export default function Navbar({ toggleSidebar }) {
         {/* Toggle Button */}
         <button
           onClick={toggleSidebar}
-          className="text-gray-700 text-2xl focus:outline-none"
+          className="text-merald-900 text-2xl focus:outline-none"
         >
           ☰
         </button>
 
-        <h1 className="text-xl font-semibold text-gray-800">
-          Sales Dashboard
-        </h1>
+        
 
       </div>
 
       {/* RIGHT SECTION */}
       <button
         onClick={handleLogout}
-        className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition"
+        className="bg-emerald-900 text-white px-4 py-2 rounded-md hover:bg-emerald-800 transition"
       >
         Logout
       </button>

@@ -31,9 +31,9 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      <div className="max-w-md w-full bg-white rounded-lg shadow-md p-8">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+    <div className="min-h-screen bg-mist-900 flex items-center justify-center p-4">
+      <div className="max-w-md w-full bg-mist-800 rounded-lg shadow-md p-8">
+        <h2 className="text-3xl font-bold text-center text-zinc-100 mb-8">
           Login
         </h2>
         
@@ -41,7 +41,7 @@ const Login = () => {
           <div>
             <label 
               htmlFor="email" 
-              className="block text-sm font-medium text-gray-700 mb-2"
+              className="block text-sm font-medium text-zinc-100 mb-2"
             >
               Email Address
             </label>
@@ -51,7 +51,7 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-800 focus:border-transparent transition duration-200 text-zinc-100"
               placeholder="you@example.com"
             />
           </div>
@@ -59,7 +59,7 @@ const Login = () => {
           <div>
             <label 
               htmlFor="password" 
-              className="block text-sm font-medium text-gray-700 mb-2"
+              className="block text-sm font-medium text-zinc-100 mb-2"
             >
               Password
             </label>
@@ -70,7 +70,7 @@ const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 pr-10"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-800 focus:border-transparent transition duration-200 pr-10 text-zinc-100"
                 placeholder="••••••••"
               />
               <button
@@ -97,17 +97,17 @@ const Login = () => {
           
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200 font-medium"
+            className="w-full bg-emerald-900 text-white py-2 px-4 rounded-md hover:bg-emerald-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200 font-medium"
           >
             Sign In
           </button>
         </form>
         
-        <p className="mt-6 text-center text-sm text-gray-600">
+        <p className="mt-6 text-center text-sm text-zinc-100">
           Don't have an account?{' '}
           <a 
             href="/register" 
-            className="text-blue-600 hover:text-blue-500 font-medium transition duration-200"
+            className="text-emerald-700 hover:text-emerald-800 font-medium transition duration-200"
           >
             Register here
           </a>
