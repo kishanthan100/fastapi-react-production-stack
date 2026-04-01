@@ -7,6 +7,8 @@ class Purchase(Base):
     id = Column(Integer, primary_key=True)
     amount = Column(Integer)
     date = Column(String)
+    item_name = Column(String)
+    item_category = Column(String)
     
 
 

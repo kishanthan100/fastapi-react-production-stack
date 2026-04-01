@@ -4,7 +4,7 @@
 
 # Environment variables (ALL environments)
 .env
-.env.*
+.env.
 *.env
 
 #################################################
